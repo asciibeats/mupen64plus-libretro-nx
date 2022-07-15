@@ -496,7 +496,7 @@ struct retro_core_option_v2_definition option_defs_us[] = {
         "True"
 #endif
     },
-#if !defined(VC) && !defined(HAVE_OPENGLES)
+#if !defined(VC) && (!defined(HAVE_OPENGLES) || defined(HAVE_OPENGLES3))
     {
         CORE_NAME "-EnableN64DepthCompare",
         "N64 Depth Compare",
